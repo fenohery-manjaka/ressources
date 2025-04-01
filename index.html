@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel</title>
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        @vite(['resources/css/app.css', 'resources/js/app.js'])       
+    </head>
+    <body class="bg-gray-50 dark:bg-gray-900">
+        <nav class="bg-white dark:bg-gray-800 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <a href="/" class="text-xl font-bold text-gray-800 dark:text-white">
+                            Livesearch
+                        </a>
+                    </div>
+                    
+                    <div class="flex-1 max-w-lg mx-8 relative">
+                        <input           
+                            type="text" 
+                            placeholder="Rechercher un article..." 
+                            class="w-full px-6 py-2 rounded-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent"
+                        >
+                        <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                            Articles
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                            Tags
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+           
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus lacus vestibulum molestie fermentum. 
+          Phasellus aliquet, nulla eu sodales semper, ligula mauris scelerisque nisl, a euismod leo nunc id sem. 
+          Pellentesque eget turpis lacinia, mollis ex id, tristique nisl. Nam vel leo nec tellus accumsan finibus. 
+          Cras interdum elit ac ex lacinia bibendum. Curabitur ut convallis velit. Vestibulum a euismod nisl. 
+          Aenean congue, elit quis facilisis eleifend, erat ligula consequat sem, in tincidunt odio ex eget turpis. 
+          Praesent in erat a lacus malesuada volutpat. Pellentesque tempor sem magna, pulvinar finibus purus aliquet non.
+        </main>
+    </body>
+</html>
